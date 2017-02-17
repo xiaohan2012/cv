@@ -1,0 +1,453 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CV.tex
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% See "README.md" for instructions on compiling this document.
+
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
+% Class options:
+% a4paper, letterpaper, nonstopmode, draftmode
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Han Xiao}
+% \newcommand{\CVTitle}{}
+\newcommand{\CVNote}{Last updated on {\today}}
+% \newcommand{\CVWebpage}{http://www.example.com/~johndoe}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+% \href{https://www.google.com/maps/place/17+Prime+Avenue,+Springfield,+Pennsylvania+10111,+USA}
+% {17 Prime Avenue, Apt 37, Springfield, Pennsylvania 10111, USA}
+\par
+\href{mailto:han.xiao@aalto.fi}
+{han.xiao@aalto.fi}
+\,\SubBulletSymbol\,
++358 503252862
+\end{SubTitle}
+
+\begin{Body}
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Education}
+{Education}
+{PDF:Education}
+
+\Entry
+\href{}
+{\textbf{Aalto University}},
+Espoo, Finland
+
+\Gap
+\BulletItem
+Ph.D. in
+\href{}
+{Computer Science}
+\hfill
+\DatestampYMD{2016}{6}{1} -- Present
+% \DatestampYMD{2014}{07}{15}
+\SubBulletItem
+Tentative thesis topic:
+{Network Inference Problems}
+\SubBulletItem
+Adviser:
+Prof.~Aristides~Gionis
+\SubBulletItem
+Focus:
+Graph mining, machine learning
+\SubBulletItem
+GPA: 4.5 / 5.0
+
+
+\Entry
+\href{}
+{\textbf{University of Helsinki}},
+Helsinki, Finland
+
+\Gap
+\BulletItem
+M.S. in
+\href{http://www.example.com/my-department}
+{Computer Science}
+\hfill
+\DatestampYMD{2013}{09}{01} --
+\DatestampYMD{2016}{06}{01}
+\SubBulletItem
+Thesis:
+{Event Detection in Interaction Network (5/5)}
+\SubBulletItem
+Adviser:
+Prof.~Aristides~Gionis
+\SubBulletItem
+GPA: 4.7 / 5.0
+
+
+
+\Entry
+\href{}
+{\textbf{Wuhan University of Technology}},
+Wuhan, China
+
+\Gap
+\BulletItem
+B.E. in
+\href{http://www.example.com/my-department}
+{Computer Science}
+\hfill
+\DatestampYMD{2008}{09}{01} --
+\DatestampYMD{2012}{06}{01}
+\SubBulletItem
+Thesis:
+ A Bayes spam filter for Chinese (7/7)}
+\SubBulletItem
+GPA: 4.1 / 5.0
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% RESEARCH EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Research Experience}
+{Research Experience}
+{PDF:ResearchExperience}
+
+\Entry
+\href{http://www.example.com/my-institute}
+{\textbf{Data Mining Group}},
+Aalto University
+
+\Gap
+\BulletItem
+PhD Researcher
+\hfill
+\DatestampYMD{2016}{06}{01} --
+Present
+\begin{Detail}
+\SubBulletItem
+Project:
+Active Learning in Epidemic Source Localization
+\SubBulletItem
+Supervisors:
+Prof.~Aristides~Gionis and
+Prof.~Fabio~Vitale
+\end{Detail}
+
+\Gap
+\BulletItem
+Research Assistant
+\hfill
+\DatestampYMD{2015}{10}{01} --
+\DatestampYMD{2016}{05}{29}
+\begin{Detail}
+\SubBulletItem
+Project:
+Event Detection in Interaction Networks
+\SubBulletItem
+Supervisors:
+Prof.~Aristides~Gionis
+\end{Detail}
+
+
+\Entry
+\href{}
+{\textbf{Computational Linguistic Group}},
+University of Helsinki
+
+\Gap
+\BulletItem
+Research Assistant
+\hfill
+\DatestampYMD{2014}{10}{01} --
+\DatestampYMD{2015}{08}{01}
+\begin{Detail}
+\SubBulletItem
+Project 1: Short text classification using co-training.
+\SubBulletItem
+Project 2: Capitalization restoration using Conditional Random Field
+\SubBulletItem
+Supervisors:
+Dr.~Roman~Yangarber
+\end{Detail}
+
+\Entry
+\href{}
+{\textbf{Complex Systems Computation Group}},
+University of Helsinki
+
+\Gap
+\BulletItem
+Research Assistant
+\hfill
+\DatestampYMD{2014}{05}{01} --
+\DatestampYMD{2015}{08}{01}
+\begin{Detail}
+\SubBulletItem
+Project 1: Text Retrieval Based on Reinforcement Learning Techniques
+\SubBulletItem
+Project 2: Entity Linking using Wikipedia Data
+\SubBulletItem
+Supervisors:
+Dr.~Dorota~Glowacka
+\end{Detail}
+
+\Entry
+\href{}
+{\textbf{School of Life Sciences and Technology}},
+Tongji University
+\Gap
+\BulletItem
+Research Assistant (part-time)
+\hfill
+\DatestampYMD{2012}{10}{01} --
+\DatestampYMD{2014}{10}{01}
+\begin{Detail}
+\SubBulletItem
+Project: Proteo Chemometric Modeling of the Antigen-Antibody Interaction
+\SubBulletItem
+Supervisors:
+Dr.~Tianyi~Qiu
+\end{Detail}
+
+%%%%%%%%%%%%%%%%%%
+%% PUBLICATIONS %%
+%%%%%%%%%%%%%%%%%%
+
+\Section
+{Publications}
+{Publications}
+{PDF:Publications}
+
+\BigGap
+\SubSection
+{Conferences}
+{Conferences}
+{PDF:Conferences}
+
+% Declare a new group to limit the scope of \MaxNumberedItem to this subsection.
+\begingroup
+\BigGap
+
+\href{http://www.example.com/my-paper-doi-3}
+{Kiran Garimella and \underline{Han Xiao}, 
+``Media attention to science,''
+in \textit{World Wide Web},
+\DatestampY{2017}.}
+
+\BigGap
+
+\href{http://www.example.com/my-paper-doi-3}
+{\underline{Han Xiao}, Polina Rozenshtein and Aristides Gionis, 
+``Discovering Topically- and Temporally-Coherent Events in Interaction Networks,''
+in \textit{European Conference on Machine Learning and Principles and Practice of Knowledge Discovery},
+\DatestampY{2016}.}
+
+\endgroup
+
+\BigGap
+
+\SubSection
+{Journals}
+{Journals}
+{PDF:Journals}
+
+% Declare a new group to limit the scope of \MaxNumberedItem to this subsection.
+\begingroup
+
+\BigGap
+
+\href{http://www.example.com/my-paper-doi-3}
+{Yang, Fan, Tao Li, Qifeng Zhou, and \underline{Han Xiao}
+  ``Cluster Ensemble Selection with Constraints''
+  in \textit{Neurocomputing},
+\DatestampY{2017}}
+
+\BigGap
+
+\href{http://www.example.com/my-paper-doi-3}
+{Tianyi Qiu, \underline{Han, Xiao}, et.al.
+  ``Proteo Chemometric Modeling of the Antigen-Antibody Interaction''
+  in \textit{PloS one},
+  \DatestampY{2016}}
+
+
+\endgroup
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% AWARDS & SCHOLARSHIPS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Awards \&\newline
+Scholarships}
+{Awards \& Scholarships}
+{PDF:AwardsAndScholarships}
+
+\BulletItem
+3rd place in Intelligent Building track,
+Junction Hackathon
+\hfill
+\DatestampY{2016}
+
+\Gap
+
+\BulletItem
+1st place in Fitness track,
+Aalto Data Science Hackathon
+\hfill
+\DatestampY{2014}
+
+\Gap
+
+\BulletItem
+International Student Grant,
+University of Helsinki
+\hfill
+\DatestampY{2013}
+
+\Gap
+\BulletItem
+2nd Prize in National Software Talent Contest, 
+Beijing
+\hfill
+\DatestampY{2011}
+
+\Gap
+\BulletItem
+University Scholarship,
+Wuhan University of Technology
+\hfill
+\DatestampY{2008} --
+\DatestampY{2012}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PROFESSIONAL AFFILIATIONS & ACTIVITIES %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% OTHER WORK EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Other Work\newline
+Experience}
+{Other Work Experience}
+{PDF:OtherWorkExperience}
+
+\Entry
+\href{http://www.example.com/my-company}
+{\textbf{Innovation Works}}, Beijing, China
+
+\hfill
+\DatestampYMD{2011}{10}{1} --
+\DatestampYMD{2012}{5}{1}
+
+\BulletItem
+Web Developer
+%%%%%%%%%%%%%%%
+%% LANGUAGES %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Languages}
+{Languages}
+{PDF:Languages}
+
+\BulletItem
+Chinese: Native.
+
+\Gap
+\BulletItem
+English: Fluent (speaking, reading, writing).
+
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
+
+\Section
+{Skills}
+{Skills}
+{PDF:Skills}
+
+\Entry
+Python,
+{\LaTeX},
+JavaScript,
+Clojure,
+Matlab,
+Java,
+C/C++
+
+%%%%%%%%%%%%%%%
+%% INTERESTS %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Interests}
+{Interests}
+{PDF:Interests}
+
+\Entry
+Cycling,
+Gym training,
+Music,
+Hiking.
+
+
+\BigGap
+\UseNoteFont%
+\null\hfill%
+[\textit{\CVNote}]
+
+\end{document}
